@@ -1,0 +1,21 @@
+
+<div class="title-box">
+
+<h4>{{title}}</h4>
+{{#link-to 'user' user}}
+<p>{{user.name}}</p>
+{{/link-to}}
+<p>
+  {{body}}
+</p>
+</div>
+<div class="comment-box">
+  <h2><strong>Comments</strong></h2>
+  {{#each comment in comments}}
+    <div class="single-comment">
+      <h4>{{comment.opinion}}</h4>
+      <p>{{comment.user.name}}</p>
+    </div>
+  {{/each}}
+
+{{outlet}}

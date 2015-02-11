@@ -1,0 +1,11 @@
+
+{{#each post in model}}
+  <div class="title-box">
+    {{#link-to 'post' post}}
+      <p>{{post.title}}</p>
+    {{/link-to}}
+      <p>Author: {{post.user.name}}</p>
+  </div>
+{{/each}}
+
+{{outlet}}

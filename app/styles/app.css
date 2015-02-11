@@ -1,0 +1,18 @@
+div.title-box, div.single-comment, div.users-box {
+  border: 1px solid #EDEDED;
+  margin: 0.25em;
+  padding: 0.25em;
+  width: 50%;
+  box-shadow: 1px 1px 2px 2px #EDEDED;
+  border-radius: 3px;
+  background: #BBB891;
+}
+
+div.nav-bar {
+  text-align: right;
+}
+
+
+body {
+  background: #C8C8C8;
+}

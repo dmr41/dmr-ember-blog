@@ -1,0 +1,11 @@
+
+<div class="users-box">
+  <h2>List of current blog users</h2>
+  {{#each user in model}}
+    {{#link-to 'user' user }}
+      <p>{{user.name}}</p>
+      {{/link-to}}
+  {{/each}}
+</div>
+
+{{outlet}}

@@ -1,0 +1,12 @@
+
+<h2>{{name}}</h2>
+
+{{#each thang in posts}}
+  {{thang.title}}
+{{/each}}
+{{#each thing in comments}}
+  <h4>{{thing.opinion}}</h4>
+{{/each}}
+
+
+{{outlet}}
