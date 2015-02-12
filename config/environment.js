@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'dmr-frontend-blog',
     environment: environment,
     baseURL: '/',
-    adapterURL: process.env.ADAPTER_URL || 'http://localhost:3000',
+    adapterURL: process.env.ADAPTER_URL,
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
