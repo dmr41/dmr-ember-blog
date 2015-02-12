@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'dmr-frontend-blog',
     environment: environment,
     baseURL: '/',
+    adapterURL: process.env.ADAPTER_URL || 'http://localhost:3000',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -18,7 +19,7 @@ module.exports = function(environment) {
       'report-uri': "'none'",
       'script-src': "'self'",
       'font-src': "'self'",
-      'connect-src': "'self' localhost:3000",
+      'connect-src': "'self' localhost:3000 https://aqueous-cove-7722.herokuapp.com",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline'",
       'media-src': "'self'"
