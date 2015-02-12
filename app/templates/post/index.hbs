@@ -9,6 +9,7 @@
   {{body}}
 </p>
 </div>
+{{#if comments}}
 <div class="comment-box">
   <h2><strong>Comments</strong></h2>
   {{#each comment in comments}}
@@ -17,5 +18,7 @@
       <p>{{comment.user.name}}</p>
     </div>
   {{/each}}
+</div>
+{{/if}}
 
 {{outlet}}

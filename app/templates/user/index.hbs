@@ -1,12 +1,28 @@
 
 <h2>{{name}}</h2>
 
-{{#each thang in posts}}
-  {{thang.title}}
-{{/each}}
-{{#each thing in comments}}
-  <h4>{{thing.opinion}}</h4>
-{{/each}}
-
+<div class="users-box">
+  {{#if posts.length}}
+    {{#each post in posts}}
+      {{#link-to 'post' post}}
+        <h3>{{post.title}}</h3>
+      {{/link-to}}
+      <p>{{post.body}}</p>
+    {{/each}}
+  {{else}}
+    <h3>{{name}} has not made any posts<h3>
+  {{/if}}
+</div>
+  <div class="users-box">
+    <h2>Comments:</h2>
+    {{#if comments.length}}
+      {{#each post in comments}}
+      <h3>{{post.post.title}}</h3>
+        <p>{{post.opinion}}</p>
+      {{/each}}
+    {{else}}
+      <h3> {{name}} has not made any comments for this post <h3>
+    {{/if}}
+  </div>
 
 {{outlet}}
