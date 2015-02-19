@@ -16,3 +16,30 @@ div.nav-bar {
 body {
   background: #C8C8C8;
 }
+
+button.button-format {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75em;
+  margin-bottom: 1em;
+}
+
+button.left {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.input-format {
+  margin: 0.5em;
+}
+
+.input-format input {
+  width: 60%;
+}
+
+.input-format textarea {
+  width: 60%;
+  height: 120px;
+}

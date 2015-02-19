@@ -13,7 +13,6 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
     contentSecurityPolicy: {
       'default-src': "'none'",
       'report-uri': "'none'",

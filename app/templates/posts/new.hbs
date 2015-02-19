@@ -1,0 +1,21 @@
+<h2>New Note!</h2>
+<div class="title-box">
+  <div class="input-format">
+    {{input placeholder="Type name here..." value=nameSpace}}
+  </div>
+  <div class="input-format">
+    {{input placeholder="Title of blog here..." value=titleSpace}}
+  </div>
+  <div class="input-format">
+    {{textarea placeholder="Blog content here..." value=contentSpace}}
+  </div>
+  <button class="button-format left" {{action 'newPost' post.id}}>Save post</button>
+</div>
+
+<div class="title-box">
+  <h2>Preview:</h2>
+  <h4> {{titleSpace}}  </h4>
+  <p>  {{nameSpace}}   </p>
+  <p>  {{contentSpace}}</p>
+</div>
+{{outlet}}
